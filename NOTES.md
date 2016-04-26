@@ -77,7 +77,7 @@ Es ist also auch hier keine gute Idee, benachbarten Zellen unterschiedliche Rahm
 Und wie schon bei der Hintergrundfarbe ist es nicht möglich, mehrere Zellen gleichzeitig zu bearbeiten. Will man also z.B. eine Tabelle mit gelben Linien in der Stärke 2 pt (anstatt der Standard-Einstellung 1 pt und schwarz), muß man sowohl den Rahmen für die gesamte Tabelle als auch die Rahmen für jede einzelne Zelle bearbeiten. Beziehungsweise jede zweite Zelle, da ja die gelbe Linie dicker als die schwarze ist und somit diese überlagert. Bei einer Stärke von 1 pt wäre es tatsächlich jede Zelle.\\
 Analog gilt das auch für unsichtbare Tabellen - also Tabellen ohne (sichtbaren) Rahmen.
 
-====Beispiele====
+## Beispiele
 
 {{ :einfuehrung:tabelle146-seite001.png?420 |}}  
 _Scribus 1.4.6_ Hintergrundfarbe Blau, einzelne Zellen eingefärbt, Spalte 2  über Eigenschaftenfenster mit schwarzen Linien versehen, alle anderen Rahmen ohne Farbe.\\
