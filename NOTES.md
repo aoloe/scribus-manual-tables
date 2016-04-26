@@ -85,3 +85,4 @@ _Scribus 1.4.6_ Hintergrundfarbe Blau, einzelne Zellen eingefärbt, Spalte 2  ü
 {{ :einfuehrung:table152-seite001.png?420 |}}  
 _Scribus 1.5.2_ Hintergrundfarbe Blau, einzelne Zellen eingefärbt, jede einzelne Zelle und die gesamte Tabelle mit Rahmenlinie 0 pt und Farbe none versehen - außer die Zellen in Spalte 2, die rechts und links einen schwarzen Rahmen mit 3 pt bekamen.
 
+## Authors: draft by laser and ale
