@@ -4,6 +4,52 @@ Scribus hat zwar ein Tabellen-Werkzeug, es wird aber empfohlen, Tabellen als Bil
 
 Einfache Tabellen können auch in Scribus mit Tabulatoren gestaltet werden.
 
+## Do you really need a table?
+
+"A table is structured for organizing and displaying information, with data arranged in columns and rows. Information is displayed as text, using words and numbers, and grid lines may be present or not. Sometimes it is best to remove the grid lines to ensure your table is easy to read and effective at communicating your message." (https://infogram.com/blog/do-you-know-when-to-use-tables-vs-charts/)
+
+"Data visualization expert and author Stephen Few explains in his book, Show Me the Numbers: Designing Tables and Graphs to Enlighten – Second Edition, the times when a table makes the most sense:
+
+The display will be used to look up individual values.
+It will be used to compare individual values but not entire series of values to one another.
+Precise values are required.
+The quantitative information to be communicated involves more than one unit of measure.
+Both summary and detail values are included." (https://infogram.com/blog/do-you-know-when-to-use-tables-vs-charts/)
+
+```
+Salesperson Jan Feb Mar
+Jenny   3,565   4,333   6,123
+John    7,899   8,040   9,300
+Robert  2,345   3,453   3,056
+Laura   10,005  10,800  9,898
+Erika   5,200   6,453   5,100
+TOTAL   $29,014 $33,079 $33,477
+```
+
+does it look like a good example to you?
+
+Wouldn't this be much readable?
+
+---> line chart: http://forums.scribus.net/index.php/topic,2858.msg13295.html#msg13295
+
+sadly, i don't really agree with their table example. at least not in the context of scribus.
+
+in my eyes, if there are interesting values about the salespersons, they should go in the text.
+i don't see much value in putting that "static" table in the document.
+imo, before publishing those numbers, one should think about the message to be conveyed.
+in this specific case, probably, the focus is on the evolution of each person's sales through the months.
+then something like the attached chart is much more expressive.
+
+i agree with the author of the article, that sometimes you want to provide the raw data to your readers.
+but that raw data is something that should go in a (linked, online) spreadsheet or -- eventually -- in the annexes.
+the reader should be able to interactively "play" with it and we have nowadays tools for doing that.
+(hey we have jupyter nowadays!)
+
+the more i think about it, and the less i'm convinced that there are reasons for putting tables in a layout document...
+except the laziness of the author : - )
+
+my position: the tabulator are often enough, and if they are not, the data is probably better presented as a chart.
+
 ## Importing tables into Scribus
 
 Tabelle können als PNG oder -- falls Ghostscript installiert ist -- als PDF in einen Bildrahmen geladen werden.
@@ -86,3 +132,20 @@ _Scribus 1.4.6_ Hintergrundfarbe Blau, einzelne Zellen eingefärbt, Spalte 2  ü
 _Scribus 1.5.2_ Hintergrundfarbe Blau, einzelne Zellen eingefärbt, jede einzelne Zelle und die gesamte Tabelle mit Rahmenlinie 0 pt und Farbe none versehen - außer die Zellen in Spalte 2, die rechts und links einen schwarzen Rahmen mit 3 pt bekamen.
 
 ## Authors: draft by laser and ale
+
+
+## Tables in Scribus: The short version
+
+The standard hint: don't do table in Scribus:
+
+- Tables are not a good way to provide information: try to avoid them (charts are way better!).
+- Tabulators often produce a nicer (and simpler to read) layout.
+- And if you really think you need a table, create it in libre office and import it as png, pdf, or svg (depending on the table and the scribus version).
+
+The best formats for importing tables (and charts) are:
+
+- PNG, it works with every version of scribus and office. you're importing a bitmap, of course, but it most cases it's good enough. just make sure, that the PNG is at the right size.
+  - SVG: can work in both 1.4 and 1.6 and you get vectors. but you have to make sure that all features in the SVG are suported by scribus. and the text will be converted to paths.
+    - PDF: can be imported as bitmap in 1.4 and and as bitmap, vector in an image frame (with limitations) and as vector (with text converted to paths.
+
+You can use any image format that is supported by for export from office and for import in scribus, but those are probably the best options.
